@@ -13,3 +13,9 @@ func TestOpenFirefox(t *testing.T) {
 func TestOpenSolitaire(t *testing.T) {
 	openProgramWithoutArgument("C:/Program Files/Microsoft Games/Solitaire/solitaire.exe")
 }
+
+// Test zum Beenden von Firefox
+func TestCloseFirefox(t *testing.T) {
+	TestOpenFirefox(t)
+	ExitHardWithName("firefox.exe")
+}
